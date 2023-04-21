@@ -26,15 +26,18 @@ Mijn startniveau is: blauw
   <summary>De eerste versie/schets van je ontwerp & je persoonlijke uitdaging</summary>
 
   ### De eerste versie/schets:
-  <img src="readme-images/Schets-pacman1.jpg" width="375px" alt="eerste versie/schets">
+  <img src="readme-images/schets-pacman1.jpeg" width="375px" alt="eerste versie/schets van pac-man">
+   <img src="readme-images/schets-monopoly.jpeg" width="375px" alt="eerste versie/schets van Rich Uncle Pennybags">
+
+  Ik wilde liever een eigen karakter kiezen dan één van de voorgestelde karakters uit de eerste les om zo de tijdlijn echt een eigen werk te maken. Juist het bedenken van concepten vind ik erg leuk waardoor ik graag de vrijheid hiervan wilde gebruiken. Tijdens de eerste les was ik aan het brainstormen over PAC-MAN waar ik al een leuk idee voor had bedacht. Maar toen ik richting huis ging liep ik even snel de Intertoys in om te kijken of ik daar wat iconische karakters tegen zou komen. Zo kwam ik Rich Uncle Pennybags tegen, oftewel de 'Monopoly guy'. Monopoly is een spel wat ik heel graag speel en zelfs meerdere versies van in huis heb liggen. Ik ben verder gaan brainstormen over dit karakter en heb er meerdere schetsen voor gemaakt. Uiteindelijk heb ik gekozen voor een ontwerp waardoor het lijkt alsof je een potje Monopoly tegen Rich Uncle Pennybags speelt, en waar de straten van het speelbord de uiteindelijke tijdlijn is.
 
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Het begrijpen van coderen in het algemeen.
+  - Werken aan mijn netheid en leesbaarheid van code.
+  - Werken met interactie en animatie in code.
+  - Kunnen begrijpen hoe code met elkaar samenwerkt.
  
 </details>
 
@@ -47,7 +50,7 @@ Mijn startniveau is: blauw
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
 
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Het opstarten ging een beetje moeizaam aangezien ik niet goed wist waar ik moest beginnen. Zo vond ik het lastig om te bepalen welke elementen ik allemaal nodig had en waar dat moest komen te staan in de HTML. Ik vind het ook moeilijk om het ontwerp voor me te zien als ik alleen nog maar een wit vlak op mijn beeldscherm heb.
 
   #### oplossing:
   Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
