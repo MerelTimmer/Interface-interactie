@@ -1,0 +1,225 @@
+/*************/
+/* CSS RESET */
+/*************/
+
+/* naar een idee van Jen Simmons */
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+body {
+    margin:0;
+}
+
+button:not([disabled]) {
+  cursor:pointer;
+}
+
+
+/* HEADER */
+
+header {
+  position: fixed;
+  left:0;
+  top:0;
+  background-color: #f006;
+}
+
+/* MAIN */
+main {
+  position: fixed;
+  top:0;
+  bottom:0;
+  width:100%;
+  max-width:40em;
+  background-color: #00f6;
+  left:max( calc((100vw - 40em) / 2), 0em);
+}
+
+.pennybagsimg {
+  width: 100%;
+  height: 40%;
+}
+
+.geldstapeltjes {
+  width: 100%;
+  background-color: rgb(110, 78, 67)
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  margin-top: 1em;
+  padding: 0;
+  padding-bottom: 1em;
+}
+
+ul li {
+  position: relative;
+  border-style: solid;
+  border-color: rgb(255 255 255 / .3);
+  border-width: .3em;
+  box-shadow: .5em .5em 1em 0em;
+  width: 3.5em;
+  height: 6em;
+ }
+
+ .geld1 {
+  background-color: rgb(214 218 227);
+ }
+
+ .geld5 {
+  background-color: rgb(229 180 196);
+ }
+
+ .geld10 {
+  background-color: rgb(158 198 200);
+ }
+
+ .geld20 {
+  background-color: rgb(205 214 197);
+ }
+
+ .geld50 {
+  background-color: rgb(185 169 205);
+ }
+
+ .geld100 {
+  background-color: rgb(214 183 152);
+ }
+
+ .geld500 {
+  background-color: rgb(242 169 75);
+ }
+
+ #geldcirkel {
+  position: absolute;
+	top: 50%;
+  left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60%;
+	height: 60%;
+	border-radius: 50%;
+	background-color: rgb(255 255 255 / .3);
+ }
+ol {
+  margin:0;
+  padding:0;
+  display:flex;
+  list-style:none;
+  width:100%;
+  overflow: auto;
+ }
+
+ol li {
+  border-style: solid;
+  border-right: 1em;
+  width:16vw;
+
+  height: 32vw;
+  aspect-ratio: 5/5;
+  flex-shrink:0;
+}
+
+.gevangenis {
+  background-color: var(--achtergrondbord);
+  width: 32vw;
+  }
+
+.tijdlijn1 {
+  background-image:linear-gradient(
+    var(--achtergrondbord) 69%,
+    var(--straatstreep) 69%,
+    var(--straatstreep) 71%,
+    var(--langestraat) 71%
+  );
+   
+}
+
+.tijdlijn2 {
+  background-image:linear-gradient(
+    var(--achtergrondbord) 69%,
+    var(--straatstreep) 69%,
+    var(--straatstreep) 71%,
+    var(--langestraat) 71%
+  )
+}
+
+.algemeenfonds {
+background-color: var(--achtergrondbord);
+}
+
+.tijdlijn4 {
+  background-image:linear-gradient(
+    var(--achtergrondbord) 69%,
+    var(--straatstreep) 69%,
+    var(--straatstreep) 71%,
+    var(--langestraat) 71%
+  )
+}
+
+.station {
+  background-color: var(--achtergrondbord);
+  }
+  
+  .kans {
+    background-color: var(--achtergrondbord);
+    }
+
+  .tijdlijn7 {
+    background-image:linear-gradient(
+      var(--achtergrondbord) 69%,
+      var(--straatstreep) 69%,
+      var(--straatstreep) 71%,
+      var(--kortestraat) 71%
+    )
+  }
+
+  .belasting {
+    background-color: var(--achtergrondbord);
+    }
+
+  .tijdlijn9 {
+    background-image:linear-gradient(
+      var(--achtergrondbord) 69%,
+      var(--straatstreep) 69%,
+      var(--straatstreep) 71%,
+      var(--kortestraat) 71%
+    )
+  }
+
+  .go {
+    background-color: var(--achtergrondbord);
+    width: 32vw;
+      }
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+:root {
+  --color-headings:crimson;
+  --achtergrondbord: rgb(215 231 205);
+  --langestraat: rgb(0 130 0);
+  --kortestraat: rgb(0 100 198);
+  --straatstreep: rgb(0 0 0);
+}
+
+
+
+
+
+/********************/
+/* ALGEMENE STYLING */
+/********************/
+
+h1 {
+  color:var(--color-headings);
+}
+
+
+/* ... */
+
+
