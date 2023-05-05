@@ -6,8 +6,10 @@ console.log("Howdy!");
 /******************************/
 
 
-// Het openen van de dilogen door op de tijdlijnknoppen te drukken.
+// Het openen van de dialogen door op de tijdlijnknoppen te drukken. 
+// Eerste dialog heeft Sanne gedaan als voorbeeld.
 
+// De false en trues zijn er voor de navigatie met de pijltjestoetsen.
 
 var dialogOpen = false;
 
@@ -89,7 +91,7 @@ function PlayPrison() {
 
 
 // Onderstaande code zorgt ervoor dat de 'back-button' het gevangeniselement laat 
-// verdwijnen en de onderstaande elementen weer klikbaar zijn.
+// verdwijnen en de onderstaande elementen weer klikbaar zijn. Deze code heb ik met behulp van ChatGPT gemaakt.
 
 const chancebutton = document.querySelector(".back-button");
 const gevangenisSectie = document.querySelector('#gevangenisknop');
@@ -109,7 +111,7 @@ chancebutton.addEventListener('click', () => {
 
 
 
-// De toetstenbord navigatie door de dialogen --> Sanne
+// De navigatie door de dialogen met de pijltjestoetsen. Geschreven door Sanne
 
 window.addEventListener("keydown", handleKeydown);
 

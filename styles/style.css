@@ -8,7 +8,10 @@
 }
 
 body {
-    margin:0;
+  margin:0;
+  background-image: url(../images/monopoly-background.png);
+  background-size: cover;
+  
 }
 
 button {
@@ -21,7 +24,36 @@ cursor: url(../images/cursorhat.png) 55 15, auto;
 
 h1 {
   color:var(--color-headings);
+    font-family:'Monopoly', Fantasy;
 }
+
+h2 {
+  font-family:'Monopoly', Fantasy;
+}
+
+h3 {
+  font-family: 'Monopoly', Fantasy;
+}
+
+p {
+  font-family: 'Lopendetekst', Arial;
+}
+
+@font-face {
+  font-family: 'Monopoly';
+  src: url('../fonts/webfontkit-20230505-102152/kabel-webfont.woff2') format('woff2'),
+  url('../fonts/webfontkit-20230505-102152/kabel-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+ }
+
+ @font-face {
+  font-family: 'Lopendetekst';
+  src: url('../fonts/webfontkit-20230505-futura/futura_medium_bt-webfont.woff2') format('woff2'),
+  url('../fonts/webfontkit-20230505-futura/futura_medium_bt-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+ }
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -32,6 +64,7 @@ h1 {
   /* KLEUREN */
   --color-headings:crimson;
   --achtergrondbord: rgb(215 231 205);
+  --achtergrondbordschaduw: rgb(193, 204, 185);
   --langestraat: rgb(0 130 0);
   --kortestraat: rgb(0 100 198);
   --straatstreep: rgb(0 0 0);
@@ -52,7 +85,15 @@ h1 {
 
   /* SCHADUW */
   --kaartjesshadow: .3em .3em .3em .0em black;
+
+
+  /* HOVER, KNOP INDRUKKEN EFFECT */
+  --kleiner: scale(97%);
+  --schaduwrandjes: inset 0 0 1em rgba(0, 0, 0, 0.6);
+  --schaduwmidden:  rgba(179, 179, 179, 0.1); 
 }
+
+
 
 
 
@@ -60,9 +101,18 @@ h1 {
 
 header {
   position: fixed;
-  left:0;
+  left:5%;
   top:0;
-  background-color: #f006;
+  width: 20%;
+  text-align: center;
+}
+
+header img {
+position: relative;
+top: 0;
+left: 0;
+width: 100%;
+max-width: 25em;
 }
 
 
@@ -70,11 +120,13 @@ header {
 main {
   position: fixed;
   border-style: solid;
+  border-width: 1em;
+  border-color: red;
    top:0;
   bottom:0;
   width:100%;
   max-width:40em;
-  background-color: #00f6;
+  background-color: var(--achtergrondbord);
   left:max( calc((100vw - 40em) / 2), 0em);
 }
 
@@ -175,6 +227,7 @@ main section:nth-of-type(1) ul li {
   padding:0;
   width:100%;
   overflow: auto;
+  overflow-y: hidden;
   /* -ms-overflow-style: none;  IE and Edge
   scrollbar-width: none; */
  }
@@ -215,7 +268,7 @@ ol > li {
 }
 
 ol > li > button {
-  /* Maakt elke button even groot als het vakje van de ol */
+  /* Vormgeving tijdlijn buttons. Maakt elke button even groot als het vakje van de ol */
   margin:0;
   padding:0;
   position: absolute;
@@ -227,17 +280,23 @@ ol > li > button {
   border: none;
   background: none;
   font-size: 1em;
-
 }
+
 
 .gevangenis {
   background-color: var(--achtergrondbord);
-  background-image: url(../images/go-to-jail.png);
-  background-size: 100%;
+  /* background-image: url(../images/go-to-jail.png); */
+  /* background-size: 100%; */
   width: 32%;
   aspect-ratio: 1/1;
 
   }
+
+.gevangenis img {
+ width: 100%;
+}
+
+
 
 .tijdlijn1 {
   background-image:linear-gradient(
@@ -245,8 +304,7 @@ ol > li > button {
     var(--straatstreep) 69%,
     var(--straatstreep) 71%,
     var(--langestraat) 71%
-  );
-   
+  );  
 }
 
 .tijdlijn2 {
@@ -260,9 +318,16 @@ ol > li > button {
 
 .algemeenfonds {
   background-color: var(--achtergrondbord);
-  background-image: url(../images/algemeen-fonds.png);
-  background-size: 100%;
+  /* background-image: url(../images/algemeen-fonds.png);
+  background-size: 100%; */
 }
+
+.algemeenfonds img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
 
 .tijdlijn4 {
   background-image:linear-gradient(
@@ -275,15 +340,25 @@ ol > li > button {
 
 .station {
   background-color: var(--achtergrondbord);
-  background-image: url(../images/trein-station.png);
-  background-size: 100%;
+  /* background-image: url(../images/trein-station.png);
+  background-size: 100%; */
   }
+
+.station img {
+  width: 100%;
+}
   
 .kans {
   background-color: var(--achtergrondbord);
-  background-image: url(../images/kans-teken.png);
-  background-size: 100%;
+  /* background-image: url(../images/kans-teken.png);
+  background-size: 100%; */
 }
+
+.kans img {
+  width: 100%;
+}
+
+
 
 .tijdlijn7 {
   background-image:linear-gradient(
@@ -296,9 +371,15 @@ ol > li > button {
 
 .belasting {
   background-color: var(--achtergrondbord);
-   background-image: url(../images/tax-ring.png);
-  background-size: 100%;
+   /* background-image: url(../images/tax-ring.png);
+  background-size: 100%; */
  }
+
+.belasting img {
+  width: 100%;
+}
+
+
 
 .tijdlijn9 {
   background-image:linear-gradient(
@@ -311,15 +392,58 @@ ol > li > button {
 
 .go {
   background-color: var(--achtergrondbord);
-  background-image: url(../images/go-arrow.png);
-  background-size: 100%;
+  /* background-image: url(../images/go-arrow.png);
+  background-size: 100%; */
   width: 32%;
   aspect-ratio: 1/1;
+}
+
+.go img {
+  width: 100%;
 }
 
 
 
 
+/* HOVERS OVER DE TIJDLIJNKNOPPEN */
+
+ol > li > button:hover {
+  box-shadow: var(--schaduwrandjes);
+  background-color: var(--schaduwmidden);
+  }
+
+.gevangenis img:hover {
+  transform: var(--kleiner);
+}
+
+.algemeenfonds img:hover {
+  transform: var(--kleiner);
+}
+
+.station img:hover {
+  transform: var(--kleiner);
+}
+
+.kans img:hover {
+  transform: var(--kleiner);
+}
+
+.belasting img:hover {
+  transform: var(--kleiner);
+}
+
+.go img:hover {
+  transform: var(--kleiner);
+}
+
+
+/* TAB VORMGEVING */
+
+ol > li > button:focus {
+  box-shadow: var(--schaduwrandjes);
+  background-color: var(--schaduwmidden);
+  outline: none;
+  }
 
 
 
@@ -334,6 +458,7 @@ dialog {
   position: fixed;
   inset: 0;  
   width: min(60%, 19em);
+  max-height: 32em;
   background-color:var(--dialogbackgroundkleur);
   box-shadow: var(--kaartjesshadow);
   padding:0;
@@ -343,6 +468,7 @@ dialog {
   z-index: 100;
   transition: .5s;
 }
+
 
 dialog::backdrop {
   /* De achtergrond aanpassen wanneer dialog geopend is (wazig) */
@@ -406,6 +532,34 @@ p {
 
 
 /* DIALOG VORMGEVING PER TIJDLIJNPUNT */
+
+
+dialog::-webkit-scrollbar {
+  background-color: var(--dialogbackgroundkleur);
+  width: 1em;
+} 
+    
+dialog::-webkit-scrollbar-thumb {
+  background-color: var(--langestraat);
+  border-radius: 50em;
+  border-style: solid;
+  border-width: .1em;
+}
+
+#dialog1950::-webkit-scrollbar-thumb {
+  background-color: var(--kortestraat);
+  border-radius: 50em;
+  border-style: solid;
+  border-width: .1em;
+}
+      
+#dialog1990-heden::-webkit-scrollbar-thumb {
+  background-color: var(--kortestraat);
+  border-radius: 50em;
+  border-style: solid;
+  border-width: .1em;
+}
+
 
 #dialog1935 h2 {
   background-color: var(--langestraat);
@@ -482,11 +636,11 @@ p {
 
 
 
-#dialog1999-2016 li:nth-of-type(5) {
+#dialog1990-heden li:nth-of-type(5) {
   grid-column-start: 3;
 }
 
-#dialog1999-2016 h2 {
+#dialog1990-heden h2 {
   background-color: var(--kortestraat);
 }
 
@@ -511,11 +665,10 @@ p {
 
 #gevangenisknop h1 {
   position: absolute;
-  top: 50%;
+  top: 60%;
   width: 100%;
-  height: 100%;
+  font-size: 3em;
   text-align: center;
-  font-size: 8em;
   color: black;
  
 }
@@ -642,7 +795,7 @@ dialog button:hover {
 
 @keyframes jaildrop{
   0% {
-    transform: translateY(-90em);
+    transform: translateY(-100em);
   }
   
   65% {
