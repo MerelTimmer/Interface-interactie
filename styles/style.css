@@ -204,7 +204,7 @@ ol > li > button {
 
 .gevangenis {
   background-color: var(--achtergrondbord);
-  background-image: url(/images/go-to-jail.png);
+  background-image: url(images/go-to-jail.png);
   background-size: 100%;
     width: 32%;
   aspect-ratio: 1/1;
