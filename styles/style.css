@@ -12,7 +12,7 @@ body {
 }
 
 button {
-cursor: url(/images/cursorhat.png) 55 15, auto;
+cursor: url(../images/cursorhat.png) 55 15, auto;
 }
 
 /********************/
@@ -260,7 +260,7 @@ ol > li > button {
 
 .algemeenfonds {
   background-color: var(--achtergrondbord);
-  background-image: url(/images/algemeen-fonds.png);
+  background-image: url(../images/algemeen-fonds.png);
   background-size: 100%;
 }
 
@@ -275,13 +275,13 @@ ol > li > button {
 
 .station {
   background-color: var(--achtergrondbord);
-  background-image: url(/images/trein-station.png);
+  background-image: url(../images/trein-station.png);
   background-size: 100%;
   }
   
 .kans {
   background-color: var(--achtergrondbord);
-  background-image: url(/images/kans-teken.png);
+  background-image: url(../images/kans-teken.png);
   background-size: 100%;
 }
 
@@ -296,7 +296,7 @@ ol > li > button {
 
 .belasting {
   background-color: var(--achtergrondbord);
-   background-image: url(/images/tax-ring.png);
+   background-image: url(../images/tax-ring.png);
   background-size: 100%;
  }
 
@@ -311,7 +311,7 @@ ol > li > button {
 
 .go {
   background-color: var(--achtergrondbord);
-  background-image: url(/images/go-arrow.png);
+  background-image: url(../images/go-arrow.png);
   background-size: 100%;
   width: 32%;
   aspect-ratio: 1/1;
@@ -386,7 +386,7 @@ dialog ul {
 
 .sluitbutton {
 position: absolute;  
-background: url(/images/Dice-5-b.svg.png) no-repeat;
+background: url(../images/Dice-5-b.svg.png) no-repeat;
 cursor:pointer;
 background-size: cover;
 width: 2.5em;
@@ -499,7 +499,7 @@ p {
   position: fixed;
   width: 100%;
   height: 100%;
-  cursor: url(/images/handcuff-closed-cursor.png) 55 15, auto;
+  cursor: url(../images/handcuff-closed-cursor.png) 55 15, auto;
 }
 
 #gevangenisknop img {
@@ -562,7 +562,7 @@ p {
   /* Z-index 2 zodat het kaartje over de tekst valt */
   z-index: 2;
   box-shadow: var(--kaartjesshadow);
-  cursor: url(/images/handcuff-open-cursor.png) 55 15, auto;
+  cursor: url(../images/handcuff-open-cursor.png) 55 15, auto;
  }
 
  .front-button img {
@@ -587,7 +587,7 @@ p {
 /* Zorgt ervoor dat de andere kant van het kaartje niet zichtbaar is en met -180deg als achterkant dient */
   transform: rotateY(-180deg);
   backface-visibility: hidden;
-  cursor: url(/images/handcuff-open-cursor.png) 55 15, auto;
+  cursor: url(../images/handcuff-open-cursor.png) 55 15, auto;
 }
 
 .back-button h3 {
