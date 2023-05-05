@@ -28,14 +28,31 @@ h1 {
 /*********************/
 
 :root {
+
+  /* KLEUREN */
   --color-headings:crimson;
   --achtergrondbord: rgb(215 231 205);
   --langestraat: rgb(0 130 0);
   --kortestraat: rgb(0 100 198);
   --straatstreep: rgb(0 0 0);
+  --tafelkleur: rgb(51, 24, 18);
+
+  --geld1kleur:  rgb(214 218 227);
+  --geld5kleur:  rgb(229 180 196);
+  --geld10kleur: rgb(158 198 200);
+  --geld20kleur: rgb(205 214 197);
+  --geld50kleur: rgb(185 169 205);
+  --geld100kleur:rgb(214 183 152);
+  --geld500kleur:rgb(242 169 75);
+  --geldcirkelkleur: rgb(255 255 255 / .3);
+
+  --dialogbackgroundkleur: rgb(255 255 255);
+
+  --fontgevangeniskaartkleur: linear-gradient(rgb(218, 73, 29), rgb(230, 102, 28));
+
+  /* SCHADUW */
+  --kaartjesshadow: .3em .3em .3em .0em black;
 }
-
-
 
 
 
@@ -69,8 +86,10 @@ main {
 
 .tafel {
   width: 100%;
-  background-color: #331812;
+  background-color: var(--tafelkleur);
 }
+
+
 
 /* GELDSTAPELTJES PLAATSING EN STYLING */
 main section:nth-of-type(1) ul {
@@ -81,61 +100,64 @@ main section:nth-of-type(1) ul {
   margin-top: -3em;
   padding: 0;
   padding-bottom: .5em; 
-  }
+}
 
 main section:nth-of-type(1) ul li {
   position: relative;
+  width: 3.5em;
+  height: 6em;
   border-style: solid;
   border-color: rgb(255 255 255 / .3);
   border-width: .3em;
-  box-shadow: .5em .5em 1em 0em;
-  width: 3.5em;
-  height: 6em;
-
+  box-shadow: var(--kaartjesshadow);
 }
+
 
  ul h3{
   transform: rotate(-90deg);
   text-align: center;
  }
 
+
  .geld1 {
-  background-color: rgb(214 218 227);
+  background-color: var(--geld1kleur);
  }
 
  .geld5 {
-  background-color: rgb(229 180 196);
+  background-color: var(--geld5kleur);
  }
 
  .geld10 {
-  background-color: rgb(158 198 200);
+  background-color: var(--geld10kleur);
  }
 
  .geld20 {
-  background-color: rgb(205 214 197);
+  background-color: var(--geld20kleur);
  }
 
  .geld50 {
-  background-color: rgb(185 169 205);
+  background-color: var(--geld50kleur);
  }
 
  .geld100 {
-  background-color: rgb(214 183 152);
+  background-color: var(--geld100kleur);
  }
 
  .geld500 {
-  background-color: rgb(242 169 75);
+  background-color: var(--geld500kleur);
  }
+
 
  #geldcirkel {
   position: absolute;
 	top: 50%;
   left: 50%;
-	transform: translate(-50%, -50%);
 	width: 60%;
 	height: 60%;
+  /* zet de cirkels in het midden van de briefjes */
+	transform: translate(-50%, -50%); 
 	border-radius: 50%;
-	background-color: rgb(255 255 255 / .3);
+	background-color: var(--geldcirkelkleur);
  }
 
 
@@ -146,11 +168,11 @@ main section:nth-of-type(1) ul li {
 /* MONOPOLYBORD TIJDLIJN */
 
  ol {
-  margin:0;
-  padding:0;
   display:flex;
   list-style:none;
   align-items: start;
+  margin:0;
+  padding:0;
   width:100%;
   overflow: auto;
   /* -ms-overflow-style: none;  IE and Edge
@@ -179,17 +201,23 @@ ol::-webkit-scrollbar-thumb {
 
 
 
+
 ol > li {
   position: relative;
   border-style: solid;
   border-right: 1em;
+  /* Width altijd in percentages zondat de pagina responsive is */
   width:16%;
-  /* height: 32vw; */
+
+  /* zorgt voor de juiste verhoudingen */
   aspect-ratio: 1/2;
   flex-shrink:0;
 }
 
 ol > li > button {
+  /* Maakt elke button even groot als het vakje van de ol */
+  margin:0;
+  padding:0;
   position: absolute;
   left:0;
   right:0;
@@ -204,9 +232,9 @@ ol > li > button {
 
 .gevangenis {
   background-color: var(--achtergrondbord);
-  background-image: url(images/go-to-jail.png);
+  background-image: url(../images/go-to-jail.png);
   background-size: 100%;
-    width: 32%;
+  width: 32%;
   aspect-ratio: 1/1;
 
   }
@@ -231,9 +259,9 @@ ol > li > button {
 }
 
 .algemeenfonds {
-background-color: var(--achtergrondbord);
-background-image: url(/images/algemeen-fonds.png);
-background-size: 100%;
+  background-color: var(--achtergrondbord);
+  background-image: url(/images/algemeen-fonds.png);
+  background-size: 100%;
 }
 
 .tijdlijn4 {
@@ -251,43 +279,43 @@ background-size: 100%;
   background-size: 100%;
   }
   
-  .kans {
-    background-color: var(--achtergrondbord);
-    background-image: url(/images/kans-teken.png);
-    background-size: 100%;
-    }
+.kans {
+  background-color: var(--achtergrondbord);
+  background-image: url(/images/kans-teken.png);
+  background-size: 100%;
+}
 
-  .tijdlijn7 {
-    background-image:linear-gradient(
-      var(--achtergrondbord) 69%,
-      var(--straatstreep) 69%,
-      var(--straatstreep) 71%,
-      var(--kortestraat) 71%
-    )
-  }
+.tijdlijn7 {
+  background-image:linear-gradient(
+    var(--achtergrondbord) 69%,
+    var(--straatstreep) 69%,
+    var(--straatstreep) 71%,
+    var(--kortestraat) 71%
+  )
+}
 
-  .belasting {
-    background-color: var(--achtergrondbord);
-    background-image: url(/images/tax-ring.png);
-    background-size: 100%;
-    }
+.belasting {
+  background-color: var(--achtergrondbord);
+   background-image: url(/images/tax-ring.png);
+  background-size: 100%;
+ }
 
-  .tijdlijn9 {
-    background-image:linear-gradient(
-      var(--achtergrondbord) 69%,
-      var(--straatstreep) 69%,
-      var(--straatstreep) 71%,
-      var(--kortestraat) 71%
-    )
-  }
+.tijdlijn9 {
+  background-image:linear-gradient(
+    var(--achtergrondbord) 69%,
+    var(--straatstreep) 69%,
+    var(--straatstreep) 71%,
+    var(--kortestraat) 71%
+  )
+}
 
-  .go {
-    background-color: var(--achtergrondbord);
-    background-image: url(/images/go-arrow.png);
-    background-size: 100%;
-    width: 32%;
-    aspect-ratio: 1/1;
-      }
+.go {
+  background-color: var(--achtergrondbord);
+  background-image: url(/images/go-arrow.png);
+  background-size: 100%;
+  width: 32%;
+  aspect-ratio: 1/1;
+}
 
 
 
@@ -299,23 +327,25 @@ background-size: 100%;
 /* EIGENDOMSBEWIJZEN TIJDLIJN */
 /******************************/
 
-/* DIALOG ALGEMEEN */
+/* DIALOG ALGEMENE VORMGEVING */
 
 dialog {
   display: block;
   position: fixed;
   inset: 0;  
   width: min(60%, 19em);
-  background-color:rgb(255 255 255);
-  box-shadow: .5em .5em 1em 0em;
+  background-color:var(--dialogbackgroundkleur);
+  box-shadow: var(--kaartjesshadow);
   padding:0;
   opacity: 0;
   pointer-events: none;
+  /* Zorgt ervoor dat dit element boven/onder andere elementen ligt */
   z-index: 100;
   transition: .5s;
 }
 
 dialog::backdrop {
+  /* De achtergrond aanpassen wanneer dialog geopend is (wazig) */
   -webkit-backdrop-filter: blur(.5em);
   backdrop-filter: blur(.5em);
 }
@@ -334,7 +364,7 @@ dialog form {
 }
 
 #streep {
-  background-color: rgb(0 0 0);
+  background-color: var(--straatstreep);
   padding: .5%;
 }
 
@@ -375,7 +405,7 @@ p {
 
 
 
-/* DIALOG PER TIJDLIJNPUNT */
+/* DIALOG VORMGEVING PER TIJDLIJNPUNT */
 
 #dialog1935 h2 {
   background-color: var(--langestraat);
@@ -461,7 +491,9 @@ p {
 }
 
 
-/* GEVANGENIS VAKJE */
+
+
+/* GEVANGENIS VAKJE VORMGEVING */
 
 #gevangenisknop {
   position: fixed;
@@ -493,7 +525,7 @@ p {
 
 
 
-
+/* De code voor de flipbutton heb ik van Codepen, en aangepast naar de passende vormgeving */
 .button-container {
   position: absolute;
   left: 50%;
@@ -503,7 +535,7 @@ p {
   transform: translate(-50%, -50%);
 }
 
-  .button-flipper{
+.button-flipper{
   width: 100%;
   height: 100%;
   aspect-ratio: 2/1;
@@ -519,15 +551,17 @@ p {
   border: solid;
   border-color: white;
   border-width: .3%;
-  background-image: linear-gradient(rgb(218, 73, 29), rgb(230, 102, 28));
-  box-shadow: .3em .3em .3em .0em black;
+  background-image: var(--fontgevangeniskaartkleur);
+  box-shadow: var(--kaartjesshadow);
   font-size: 2em;
   color: #fff;
 
+/* Zorgt ervoor dat de andere kant van het kaartje niet zichtbaar is en met 0deg als voorkant dient */
   transform: rotateY(0deg);
   backface-visibility: hidden;
+  /* Z-index 2 zodat het kaartje over de tekst valt */
   z-index: 2;
-  box-shadow: .3em .3em .3em .0em black;
+  box-shadow: var(--kaartjesshadow);
   cursor: url(/images/handcuff-open-cursor.png) 55 15, auto;
  }
 
@@ -548,8 +582,9 @@ p {
   border-width: .4em;
   border-color: black;
   background-color: rgb(255, 255, 250);
-  box-shadow: .3em .3em .3em .0em black;
+  box-shadow: var(--kaartjesshadow);
  
+/* Zorgt ervoor dat de andere kant van het kaartje niet zichtbaar is en met -180deg als achterkant dient */
   transform: rotateY(-180deg);
   backface-visibility: hidden;
   cursor: url(/images/handcuff-open-cursor.png) 55 15, auto;
@@ -581,6 +616,7 @@ p {
 /* ANIMATIES */
 /******************************/
 
+/* Sluitknopje van dialogen */
 @keyframes sluitbutton {
   0% { 
     transform: rotate(0deg);
@@ -595,6 +631,7 @@ dialog button:hover {
   animation-name: sluitbutton;
   animation-duration: .5s;
 }
+
 
 
 
@@ -631,13 +668,15 @@ animation-play-state: paused;
 
 
 
-
+/* het hover effect over het uit de gevangenis kaart*/
  .button-flipper:hover {
 transform: scale(200%) translateY(-5em) rotateY(180deg);
 } 
 
 
 
+
+/* De gevangins wordt met een fadeOut weer ontzichtbaar */
 @keyframes fadeOut {
   from {opacity: 1;}
   to {opacity: 0;}
