@@ -193,13 +193,13 @@ Mijn startniveau is: blauw
   <summary>Mijn eindresultaat & persoonlijke ontwikkeling</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/Eindscreenshot-1" width="375px" alt="final ontwerp">
-  <img src="readme-images/Eindscreenshot2" width="375px" alt="final ontwerp 2">
-  <img src="readme-images/Eindscreenshot3" width="375px" alt="final ontwerp 3">
-  <img src="readme-images/Eindscreenshot4" width="375px" alt="final ontwerp 4">
-  <img src="readme-images/Eindscreenshot5" width="375px" alt="final ontwerp 5">
-  <img src="readme-images/Eindscreenshot6" width="375px" alt="final ontwerp 6">
-  <img src="readme-images/Eindscreenshot7" width="375px" alt="final ontwerp 7">
+  <img src="readme-images/Eindscreenshot-1.png" width="375px" alt="final ontwerp">
+  <img src="readme-images/Eindscreenshot2.png" width="375px" alt="final ontwerp 2">
+  <img src="readme-images/Eindscreenshot3.png" width="375px" alt="final ontwerp 3">
+  <img src="readme-images/Eindscreenshot4.png" width="375px" alt="final ontwerp 4">
+  <img src="readme-images/Eindscreenshot5.png" width="375px" alt="final ontwerp 5">
+  <img src="readme-images/Eindscreenshot6.png" width="375px" alt="final ontwerp 6">
+  <img src="readme-images/Eindscreenshot7.png" width="375px" alt="final ontwerp 7">
 
   ### Dit ging goed/Heb ik geleerd: 
   Ik heb veel geleerd over coderen, zeker omdat ik hier nog helemaal geen ervaring mee had. Wat voor mezelf goed ging is het gevangenisvakje. De animatie en het kaartje heb ik bijna helemaal zelf (met wat internet hulp) kunnen coderen en vond ik een leuke toevoeging voor de tijdlijn. Verder heb ik voor mijn idee het positioneren van de elementen goed onder de knie terwijl ik dit eerst erg lastig vond. Nu heb ik in mijn ontwerp ook veel verschillende opties voor het positioneren van elementen gebruikt waardoor ik het allemaal wel tegen kwam.
