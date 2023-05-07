@@ -52,7 +52,7 @@ Mijn startniveau is: blauw
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
 
   ### Bevinding 1:
-  Als feedback kreeg ik eigenlijk wel mee dat het een origineel idee was en heel passend voor de tijdlijn. Ik twijfelde nog tussen het onderwerp voor de tijdlijn tussen de designs van Rich Uncle Pennybags of een tijdlijn over alle pionnetjes die het originele spel heeft gebruikt. Het laatste idee vonden meerdere studenten origineler en leuker klinken dan de designs. Hier was ik het ook mee eens waardoor mijn keuze daarvoor is gevallen. Als verdere feedback kreeg ik nog leuke ideeën over easter eggs en andere kleine details. Zo kreeg ik inspiratie voor bijvoorbeeld een vakje 'gevangenis' waarbij er dan tralies naar beneden zouden vallen, of dat ik de ogen van Rich Uncle Pennybags zou kunnen laten knipperen.  
+  Als feedback kreeg ik eigenlijk wel mee dat het een origineel idee was en passend voor de tijdlijn. Ik twijfelde nog het bij het ontwerp voor de tijdlijn tussen de designs van Rich Uncle Pennybags of een tijdlijn over alle pionnetjes die het originele spel heeft gebruikt. Het laatste idee vonden meerdere studenten origineler en leuker klinken dan de designs. Hier was ik het ook mee eens waardoor mijn keuze daarvoor is gevallen. Als verdere feedback kreeg ik nog leuke ideeën over easter eggs en andere kleine details. Zo kreeg ik inspiratie voor bijvoorbeeld een vakje 'gevangenis' waarbij er dan tralies naar beneden zouden vallen, of dat ik de ogen van Rich Uncle Pennybags zou kunnen laten knipperen.  
 
   Veel heb ik dus niet aan mijn ontwerp aangepast. Ik heb de ideeën die ik door de feedback heb gekregen opgeschreven zodat ik ze niet vergeet, maar ik wil me daar in het begin nog niet te veel mee bezig houden. Het lijkt me voor mij handiger en belangrijker om te kijken hoe ver ik kom met coderen en wat ik allemaal kan toepassen. Zo kan ik altijd mijn verwachtingen bijstellen en beetje bij beetje mijn ontwerp uitbreiden tot mijn niveau.
 
@@ -90,7 +90,7 @@ Mijn startniveau is: blauw
   Nu ik de kaartjes had wilde ik verder met de geldstapeltjes. Deze had ik ook allemaal in een aparte class gezet zodat ik ze apart van elkaar kon aanspreken. Het enige probleem waar ik bij de geldstapeltjes tegenaan liep is dat er een cirkel in elk stapeltje moest staan en dat de tekst eigenlijk een kwart gedraaid moest worden. 
   
   ### oplossing:
-  Voor de cirkels in alle geldstapeltjes heb ik aan ChatGPT gevraagd hoe ik een cirkel in een vierkant in CSS kreeg. Hier kwam een code uit waarvan ik 90% begrijp. Zelf had ik wel bedacht dat ik bij elke geldclass een div id="geldcirkel" moest toevoegen. Zodat wanneer ik "geldcirkel" in de CSS aansprak het gelijk bij alle geldbiljetten toegepast werd. Dit lukte allemaal waardoor ik de geldstapeltjes heb. Alleen de tekst moet nog een kwartslag gedraaid worden, alleen dit pas ik wel aan zodra ik bezig ga met fonts en tekst in het algemeen. 
+  Voor de cirkels in alle geldstapeltjes heb ik opgezocht hoe ik een cirkel in een vierkant in CSS kreeg. Hier kwam een code uit waarvan ik 90% begrijp. Zelf had ik wel bedacht dat ik bij elke geldclass een div id="geldcirkel" moest toevoegen. Zodat wanneer ik "geldcirkel" in de CSS aansprak het gelijk bij alle geldbiljetten toegepast werd. Dit lukte allemaal waardoor ik de geldstapeltjes heb. Alleen de tekst moet nog een kwartslag gedraaid worden, alleen dit pas ik wel aan zodra ik bezig ga met fonts en tekst in het algemeen. 
   <img src="readme-images/Screenshot5.png" width="375px" alt="Vierde screenshot">
   <img src="readme-images/Screenshot-geldcirkel.png" width="375px" alt="Geldcirkel HTML screenshot">
 
@@ -105,24 +105,52 @@ Mijn startniveau is: blauw
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
   
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Bij de tweede feedback ronde was ik nog iets minder ver dan gehoopt. Zo had ik de vakjes met informatie nog niet en eigenlijk alleen nog een basis van de vormgeving die ik wilde hebben. Ik kreeg wel als commaentaar dat ik goed op weg was en ook nog leuke ideeën en inspiratie om toe te passen. Bijvoorbeeld opmerkingen over dat ik de achtergrond wazig kon maken als het informatievakje zichtbaar was, of dat er een animatie in de afbeeldingen van de knoppen kan zitten. 
+
+  De feedback over mijn code vond ik heel waardevol. Zelf wist ik dat het nog redelijk een zooitje was en ik heb wel tips gekregen om dit te verbeteren. Zo kon ik de algemene styling en de custom properties beter bovenaan zetten zodat je er gelijk bij kon. Ook kreeg ik als tip om wel voldoende witruimte over te houden omdat het misschien wel snel wat druk kan worden met mijn tijdlijn.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Ik heb de tips over het netter maken van de code meegenomen en gelijk toegepast zodat het overzichtelijker zou worden. Verder heb ik de overige feedback opgeschreven zodat ik deze bij mij kon houden wanneer ik de informatievakjes ging maken.
 
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  De volgende stap waren de informatievakjes. Dit vond ik wel heel lastig om mee te beginnen aangezien ik Javascript heel moeilijk te begrijpen vind. Ik liep tegen het probleem aan dat het vakje eerst ontzichtbaar moest zijn en pas zichtbaar als deze zou verschijnen. 
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Ik ben wel begonnen met het maken van de vakjes. Dus de vormgeving van de kaartjes en dan zou ik later wel het stukje Javascript toepassen. Hier heb ik samen met Sanne aan gezeten en heeft hij mij 1 op 1 uitgelegd hoe een dialog werkt. Het eerste tijdlijnvakje heeft hij uitgeschreven, waarna ik de rest van de vakjes zelf kon doen. 
+  <img src="readme-images/Screenshot6.png" width="375px" alt="Screenshot 6">
 
 
 
   ### Bevinding 3:
-  ...
+  Mijn informatievakjes moesten verschillende foto's bevatten omdat ik ze later misschien nog wil kunnen animeren. Nu vind ik positioneren nog wel moeilijk, zeker nu er meer en meer elementen in het ontwerp komen wilt dit niet altijd lukken. De foto's in de vakjes ging ik in een grid maken. Dit was de eerste keer dat ik een grid zou gebruiken dus hier moest ik even goed puzzelen.
 
+  #### oplossing:
+  Hoe een grid in elkaar zat vond ik wat lastig, dus om dit beter te begrijpen heb ik Google moeten gebruiken. Ik heb daarnaast het grid even op papier uitgetekend om het mezelf wat makkelijker te maken. Uiteindelijk is het me allemaal wel gelukt en snap ik ook beter hoe ik elementen kan positioneren in een grid.
+    <img src="readme-images/Screenshot-grids.png" width="375px" alt="Screenshot grid informatievakjes">
+
+  ### Bevinding 4:
+  Nu ik de basis van de vakjes had leek het mij een passend idee als je daar ook met je toetsenbord doorheen kon springen d.m.v. de pijltjestoetsen. Ik heb zitten zoeken op internet of ik dit zelf kon toepassen, maar aangezien ik Javascript tot nu toe heel moeilijk vind snapte ik hier weinig van. 
+
+  #### oplossing:
+  Uiteindelijk heb ik met Sanne gezeten om dit werkend te krijgen. Sanne heeft de code getypt maar met de uitleg die ik daarbij kreeg begrijp ik wel redelijk hoe de code in elkaar zit. 
+
+  ### Bevinding 5:
+  Nu ik de kaartjes grotendeels ook had leek het mij leuk om te kijken of ik de gevangenis kon uitwerken. Ik wilde dat er een animatie ging afspelen dat er tralies naar beneden zou vallen en dat je d.m.v. een kanskaart de gevangenis weer kon verlaten. Ik kwam hier tegen meerdere problemen aan. De animatie zelf ging eerst ook niet helemaal goed, en ik had het probleem dat alles achter de sectie niet meer aanklikbaar was wanneer de gevangenis ontzichtbaar was, er zat natuurlijk een element voor. 
+
+  #### oplossing:
+  De animatie heb ik gemaakt met keyframes en gezorgd dat de animatie gepauzeerd zou zijn. Daarbij is de gevangenis eerst buiten het beeld waardoor de knoppen eronder wel weer aanklikbaar zijn. Deze heb ik gelinkt aan de gevangenisknop zodat de animatie zou beginnen met afspelen. 
+    <img src="readme-images/Screenshot-gevangenis-eerst.png" width="375px" alt="Screenshot gevangenis animatie">
+    <img src="readme-images/Screenshot-gevangenis-animatie-code.png" width="375px" alt="Screenshot gevangenis animatie code">
+
+  ### Bevinding 6:
+  De volgende stap was om ook weer de gevangenis uit te kunnen. Dit was wat moeilijker aangezien ik al snel had dat de sectie ontzichtbaar was maar nog steeds wel boven alle andere secties stond. Ook wilde ik dit met een kanskaart als button doen die zou omdraaien wanneer je over de kaart hovert.
+
+  #### oplossing:
+  De oplossing van het kaartje heb ik via een code op internet gedaan en die vormgegeven naar het ontwerp. Dit werkte eigenlijk al erg goed, zelf heb ik er nog de animatie aan toegevoegd dat het kaartje ook omhoog gaat als je erover hovert. Het probleem dat de gevangenis boven alle andere elementen was heb ik via chatGPT opgelost. Deze heeft een Javascript code geschreven die ik kon gebruiken.
+    <img src="readme-images/Screenshotgevangenis.png" width="375px" alt="Screenshot gevangenis met kaartje">
+    <img src="readme-images/ChatGPT-code.png" width="375px" alt="Screenshot code gevangeniskaartje">
 </details>
 
 
@@ -134,23 +162,25 @@ Mijn startniveau is: blauw
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
   
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Als feedback kreeg ik terug dat het er allemaal goed uitzag. Wel was de tekst van de kaartjes erg lang waardoor sommige kaartjes gingen uitrekken, dit was storend. Ook kreeg ik als feedback om een achtergrond bij het geheel toe te voegen om zo de lege ruimte op te vullen. Wel moet deze niet te druk zijn en passend bij de gehele vorm. Daarnaast was de afbeelding van Rich Uncle Pennybags nog was leeg en saai.
+
+  De laatste feeedback die ik kreeg was over de afbeeldingen van de tijdlijn. Deze staan expres op zijn kop zodat het zou lijken alsof je met Rich Uncle Pennybags een potje Monopoly aan het spelen bent. Dit heb ik even omgedraaid, maar vond ik er zelf wat raar uitzien. Ik snap waar de feedback vandaan komt, maar dan had ik ook veel knoppen om moeten draaien en anders moeten linken waardoor ik het gelaten heb zoals het is.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Ik heb de feedback verwerkt en zowel de afbeelding aangepast als een achtergrond toegevoegd. Ook heb ik toegevoegd dat je nu door de informatievakjes kan scrollen. Hierbij is de scrollbar in hetzelfde thema als de scrollbar van de gehele tijdlijn.
+  <img src="readme-images/Screenshot9.png" width="375px" alt="Screenshot informatiekaartje met scrollbar groen">
+  <img src="readme-images/Screenshot-blauw.png" width="375px" alt="Screenshot informatiekaartje met scrollbar blauw">
 
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Ik ging verder met de elementen als de fonts, en de effecten op hovers en het tab knopje. Ik wilde dezelfde fonts gebruiken als Monopoly en daarnaast wilde ik dat het leek alsof het knopje van de tijdlijn echt ingedrukt werd.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  De fonts waren gelukkig gratis te downloaden en kon ik via fonts squirrel juist omzetten zodat ik deze in mijn code kon gebruiken. Hiervoor heb ik de code van de presentatie gebruikt en zelf ingevuld. De fonts werken en erachter heb ik een alternatieve font gekozen die standaard voor elke browser is.
+  <img src="readme-images/Screenshot-tekst.png" width="375px" alt="Screenshot tekst en ingedrukt vakje">
 
-
-
-  ### Bevinding 3:
-  ...
+  
 
 </details>
 
@@ -163,19 +193,34 @@ Mijn startniveau is: blauw
   <summary>Mijn eindresultaat & persoonlijke ontwikkeling</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="final ontwerp">
-
+  <img src="readme-images/Eindscreenshot-1" width="375px" alt="final ontwerp">
+  <img src="readme-images/Eindscreenshot2" width="375px" alt="final ontwerp 2">
+  <img src="readme-images/Eindscreenshot3" width="375px" alt="final ontwerp 3">
+  <img src="readme-images/Eindscreenshot4" width="375px" alt="final ontwerp 4">
+  <img src="readme-images/Eindscreenshot5" width="375px" alt="final ontwerp 5">
+  <img src="readme-images/Eindscreenshot6" width="375px" alt="final ontwerp 6">
+  <img src="readme-images/Eindscreenshot7" width="375px" alt="final ontwerp 7">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
+  Ik heb veel geleerd over coderen, zeker omdat ik hier nog helemaal geen ervaring mee had. Wat voor mezelf goed ging is het gevangenisvakje. De animatie en het kaartje heb ik bijna helemaal zelf (met wat internet hulp) kunnen coderen en vond ik een leuke toevoeging voor de tijdlijn. Verder heb ik voor mijn idee het positioneren van de elementen goed onder de knie terwijl ik dit eerst erg lastig vond. Nu heb ik in mijn ontwerp ook veel verschillende opties voor het positioneren van elementen gebruikt waardoor ik het allemaal wel tegen kwam.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik merkte vooral dat CSS het onderdeel van coderen was dat ik het leukste vond en wat ook wel goed ging. Zo zag ik de vele mogelijkheden van CSS en hoe je elementen naar je eigen hand kan zetten.
 
+  Verder gingen de losstaande codes het makkelijkste. Ik vond codes die op elkaar inspeelde wat moeilijk om te begrijpen. Zo heb ik gekozen voor een responsive design maar het werken met max width en percentages vond ik, vooral in het begin, redelijk lastig. Maar de kleine elementen die leuk zijn voor het design gingen erg goed. Zoals de cursors aanpassen, de geldstapeltjes of de passende Monopoly fonts invoeren.
+
+  Het volgende wat goed ging was het animeren met keyframes. Dit onderdeel vond ik ook zeker leuk en heb ik op twee momenten in mijn tijdlijn gebruikt. Ik wilde meer animaties in mijn tijdlijn kwijt, maar door tijdsgebrek ben ik hier helaas niet aan toegekomen.
+
+  Als laatste heb ik ook veel geleerd over hoe belangrijk het is om je code netjes te houden. Ik ben van mezelf niet heel gestructureerd, dus hier heb ik wel mijn best op moeten doen. Zeker toen de code langer werd raakte ik ook zeker in de knoop waardoor in gelijk meer structuur in de code heb toegepast. Ik denk wel dat mijn HTML code wat netter kan, maar ik vind HTML ook nog wel een lastig onderdeel om goed te begrijpen.  
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
+  Ondanks dat ik het erg leuk vond om te leren coderen, ging niet alles helemaal goed. Ik heb daardoor best wat leuke ideeën moeten laten vallen wegens tijdgebrek. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Javascript was een onderdeel dat ik heel moeilijk vond. Ik heb het wel veel geprobeerd, maar daar mislukte ook erg veel van. Hierdoor heb ik het Javascript onderdeel niet heel uitgebreid gedaan en de interactie redelijk simpel gehouden.
+
+  Ik heb redelijk wat moeite gehad met het maken van het flip kanskaartje van de gevangenis. Daardoor heb ik de Javascript code ook niet zelf geschreven, maar wel zelf de vormgeving gedaan. Ik wilde deze functie ook gebruiken voor de algemeen fonds vakjes, en de kansvakjes op de tijdlijn. Maar ik was al zo lang bezig met het flip kaartje dat ik hier helaas geen tijd meer voor had, dus die vakjes hebben momenteel nog geen functie.
+
+  Verdere ideeën die ik helaas niet heb kunnen uitwerken is het GO! vakje. Hier wilde ik ook met animaties werken dat het leek alsof je Monopoly-geld kreeg. Ook wilde ik graag Rich Uncle Pennybags met een tekstwolkje iets laten zeggen wanneer je met de muis over zijn geld zou hoveren. Dit waren leuke elementen om toe te passen maar wat me helaas niet is gelukt.
+
 </details>
 
 
@@ -188,8 +233,15 @@ Mijn startniveau is: blauw
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. Monopoly man ahtergrond: https://www.pngkit.com/view/u2e6q8i1t4u2o0w7_monopoly-man-running-monopoly-man-pay-me/
+2. Monopoly-tokens en informatie: https://coolmaterial.com/home/games/the-story-behind-monopoly-pieces/
+3. Handboeien cursors: https://www.freepik.com/free-vector/metal-handcuffs-realistic-set_26763790.htm#query=handcuffs%20open&position=2&from_view=search&track=ais
+4. Hoge hoed cursor: https://www.pinpng.com/download/iowiho_monopoly-game-pieces-png-transparent-png/
+5. Achtergrond van het kantoor: https://www.freepik.com/
+
+6. Code voor de flip kanskaart button: https://codepen.io/diegotorres/pen/WxaxKo
+7. Code ook gebruikt voor de flip kanskaart button: https://www.w3schools.com/howto/howto_css_flip_card.asp
+8. ChatGPT voor de code om het gevangenisvakje te laten verwijderen.
+9. Craiyon AI voor de hond en het schilderij in de achtergrond afbeelding.
 
 </details>
